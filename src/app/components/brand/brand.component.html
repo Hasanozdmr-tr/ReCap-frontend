@@ -1,1 +1,20 @@
-<p>brand works!</p>
+
+
+<div class="list-group-item sidebar-title">
+    <b routerLink="">TÜM ARABALAR</b>
+</div>
+
+    <div class="list-group-item sidebar-title">
+    <b routerLink="brands">MARKALAR</b>
+</div>
+  
+ 
+<div class="list-group-item sidebar-title">
+    
+            <li (click)="setCurrentBrand(brand)" 
+            routerLink="cars/brand/{{brand.brandId}}"
+            *ngFor="let brand of brands"
+            [class]="getCurrentBrandClass(brand)" >{{brand.brandName}}</li>
+        
+</div>
+

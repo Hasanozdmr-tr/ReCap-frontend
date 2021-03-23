@@ -1,1 +1,14 @@
-<p>color works!</p>
+
+    <div class="list-group-item sidebar-title">
+        <b routerLink="colors">RENKLER</b>
+    </div>
+      
+     
+    <div class="list-group-item sidebar-title">
+        
+                <li (click)="setCurrentColor(color)" 
+                routerLink="cars/color/{{color.colorId}}"
+                *ngFor="let color of colors"
+                [class]="getCurrentColorClass(color)">{{color.colorName}}</li>
+            
+    </div>

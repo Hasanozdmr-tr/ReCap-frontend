@@ -1,0 +1,17 @@
+<div class="row" >
+  <div *ngFor="let carDto of carDtos" class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <img src="https://i1.haber7.net//haber/haber7/photos/2020/15/yqJdn_1586600453_0543.jpg" class="card-img-top" alt="thumbnail">
+    <div  class="card-body">
+      <h5 class="card-title">{{carDto.brandName}}</h5>
+    </div >
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-dark">#{{carDto.carId}}</li>
+      <li class="list-group-item list-group-item-dark">Brand: {{carDto.carName}}</li>
+      <li class="list-group-item list-group-item-dark">Color: {{carDto.colorName}} </li>
+      <li class="list-group-item list-group-item-dark">Daily Price: {{carDto.dailyPrice}} ₺</li>
+    </ul>
+    <div class="card-body">
+      <button routerLink="/CarDto/carDto/{{carDto.carId}}" type="button" class="btn btn-secondary">Details</button>
+    </div>
+  </div>
+</div>

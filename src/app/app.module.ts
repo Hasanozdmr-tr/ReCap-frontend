@@ -11,6 +11,8 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { RentalComponent } from './components/rental/rental.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { CarImageComponent } from './components/carImage/car-image/car-image.component';
+import { CarDetailComponent } from './components/car-detail/car-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     CustomerComponent,
     BrandComponent,
     RentalComponent,
-    SidebarComponent
+    SidebarComponent,
+    CarImageComponent,
+    CarDetailComponent
   ],
   imports: [
     BrowserModule,
